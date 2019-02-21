@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.update-info-form {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 360px;
+  margin: 80px auto;
+  padding: 75px 30px 40px;
+  background: #fafafa;
+  border: 1px solid #ebebeb;
+  box-shadow: rgba(0,0,0,0.14902) 0 1px 1px 0, rgba(0,0,0,0.09804) 0 1px 2px 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+mat-form-field {
+width: 270px;
+margin-top: 24px;
+}
+
+.fa-angular {
+font-size: 80px;
+color: #919191;
+position: absolute;
+top: 0;
+}
+
+.update-info-button {
+color: white;
+font-family: 'Noto Sans', sans-serif;
+background: #4485f5;
+height: 48px;
+margin-top: 40px;
+width: 50%;
+font-size: 16px;
+border: 0;
+cursor: pointer;
+transition: all 0.15s ease;
+}
+
+.update-info-button:active {
+background: #3355ab;
+}
+
+mat-spinner {
+  position: absolute;
+  right: 25px;
+  top: 115px;
+}
+
+
+

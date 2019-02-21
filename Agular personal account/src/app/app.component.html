@@ -1,0 +1,12 @@
+<main>
+  <router-outlet></router-outlet>
+  <div class="select-language-input-container">
+    <mat-form-field>
+      <select matNativeControl (change)="changeLanguageHandler($event)">
+        <option value="en">En</option>
+        <option value="ru">Ru</option>
+      </select>
+    </mat-form-field>
+  </div>
+</main>
+

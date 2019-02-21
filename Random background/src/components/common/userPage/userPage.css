@@ -1,0 +1,60 @@
+.userPageHeader {
+    text-align: center;
+    padding: 8px;
+}
+
+.header-logo {
+    margin-left: 50px;
+    width: 5%;
+}
+
+.header-logo-text {
+    font-weight: bold;
+}
+
+.log-out-link {
+    float: right;
+}
+
+.userPageContentContainer {
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    overflow-x: hidden;
+}
+
+.background-image-section {
+    padding-top: 1.5%;
+}
+
+.user-background {
+    width: 80%;
+}
+
+.user-categories-section {
+    margin-top: 4%;
+}
+
+.background-categories-card {
+    margin-top: 2%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.background-categories-checkbox-label {
+    float: right;
+}
+
+.categories-save-button-container {
+    min-height: 40px;
+    margin-top: 1.5%;
+}
+
+.alerts-container {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+

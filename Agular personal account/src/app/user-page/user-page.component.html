@@ -1,0 +1,23 @@
+<nav mat-tab-nav-bar>
+  <a mat-tab-link
+     (click)="tabClickHandler('user-info')"
+     routerLinkActive #rla="routerLinkActive"
+     [active]="rla.isActive">
+    {{"Personal information tab label" | translate}}
+  </a>
+  <a mat-tab-link
+     (click)="tabClickHandler('update-info')"
+     routerLinkActive #rla="routerLinkActive"
+     [active]="rla.isActive">
+    {{"Update personal information label" | translate}}
+  </a>
+  <div ngClass="buttons-container">
+    <button mat-flat-button color="primary" (click)="logOut()">{{'Log out button' | translate}}</button>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
+<app-loading-spinner [isShowSpinner]="isLoading"></app-loading-spinner>
+
+
+

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.user-information-container {
+  width: 340px;
+  margin: 80px auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  background: #fafafa;
+  border: 1px solid #ebebeb;
+  box-shadow: rgba(0,0,0,0.14902) 0 1px 1px 0, rgba(0,0,0,0.09804) 0 1px 2px 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.field-info-container {
+  margin-top: 20px;
+}
+
+.field-label {
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 17px;
+  margin-right: 10px;
+}
+
+.field-value {
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.65);
+}

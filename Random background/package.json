@@ -1,0 +1,41 @@
+{
+  "name": "random-photo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "1.2.15",
+    "@fortawesome/free-solid-svg-icons": "5.7.2",
+    "@fortawesome/react-fontawesome": "0.1.4",
+    "axios": "0.18.0",
+    "bootstrap": "4.3.0",
+    "cors": "2.8.5",
+    "express": "4.16.4",
+    "lodash": "4.17.11",
+    "nodemon": "1.18.10",
+    "react": "16.8.1",
+    "react-burger-menu": "2.6.5",
+    "react-compose": "2.0.0",
+    "react-dom": "16.8.1",
+    "react-redux": "6.0.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.5",
+    "redux": "4.0.1",
+    "redux-devtools-extension": "2.13.8",
+    "redux-thunk": "2.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

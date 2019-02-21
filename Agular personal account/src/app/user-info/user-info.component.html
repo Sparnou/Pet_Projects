@@ -1,0 +1,25 @@
+<div ngClass="user-information-container">
+  <h2>
+    {{'Personal information title' | translate}}
+  </h2>
+  <div ngClass="field-info-container">
+    <span ngClass="field-label">{{'Name label' | translate}}</span>
+    <span ngClass="field-value">{{this.userService.getUserFromMemory().username}}</span>
+  </div>
+  <div ngClass="field-info-container">
+    <span ngClass="field-label">{{'Age label' | translate}}</span>
+    <span ngClass="field-value">{{this.userService.getUserFromMemory().age}}</span>
+  </div>
+  <div ngClass="field-info-container">
+    <span ngClass="field-label">{{'Date of birthday label' | translate}}</span>
+    <span ngClass="field-value">{{this.dateFormat(this.userService.getUserFromMemory().dateOfBirth)}}</span>
+  </div>
+  <div ngClass="field-info-container">
+    <span ngClass="field-label">{{'Date of login label' | translate}}</span>
+    <span ngClass="field-value">{{this.dateFormat(this.userService.getUserFromMemory().dateOfFirstLogin)}}</span>
+  </div>
+  <div ngClass="field-info-container">
+    <span ngClass="field-label">{{'Notification date label' | translate}}</span>
+    <span ngClass="field-value">{{this.dateFormat(this.userService.getUserFromMemory().dateOfNextNotification)}}</span>
+  </div>
+</div>

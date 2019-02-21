@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+}
+
+.app-header {
+    height: 50px;
+    background: #000;
+    display: flex;
+    width: 100vw;
+}
+
+.logo-container {
+    height: 100%;
+    margin: auto;
+    background-size: cover;
+}
+
+.logo-img {
+    height: 100%;
+}

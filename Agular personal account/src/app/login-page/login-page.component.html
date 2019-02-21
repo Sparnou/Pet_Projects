@@ -1,0 +1,36 @@
+<form [formGroup]="authForm" ngClass="log-in-form">
+  <i class="fab fa-angular"></i>
+  <mat-form-field>
+    <input
+      matInput
+      formControlName="username"
+      AUTOCOMPLETE="off"
+      placeholder="{{'Placeholder enter your username' | translate}}"
+    >
+    <mat-error
+      *ngIf="authForm.controls.username.errors?.required && (authForm.controls.username.dirty || authForm.controls.username.touched)">
+      {{'Error field can not be empty' | translate}}
+    </mat-error>
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      formControlName="password"
+      AUTOCOMPLETE="off"
+      placeholder="{{'Placeholder enter your password' | translate}}"
+      type="password"
+    >
+    <mat-error
+      *ngIf="authForm.controls.password.errors?.required && (authForm.controls.username.dirty || authForm.controls.username.touched)">
+      {{'Error field can not be empty' | translate}}
+    </mat-error>
+  </mat-form-field>
+  <button ngClass="log-in-button" (click)="logInHandler()">{{'Log in button' | translate}}</button>
+  <div ngClass="forgot-password-container">
+    <a ngClass="forgot-password-link" routerLink="/forgot-password">{{'Forgot password link' | translate}}</a>
+  </div>
+</form>
+<app-loading-spinner [isShowSpinner]="isLoading"></app-loading-spinner>
+
+
+

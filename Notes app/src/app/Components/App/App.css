@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    border: 0;
+}
+
+main {
+    /*background: black;*/
+    width: 820px;
+    margin: 0 auto;
+}

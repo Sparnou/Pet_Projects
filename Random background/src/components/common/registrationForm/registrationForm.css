@@ -1,0 +1,46 @@
+.registration-photo-column {
+}
+
+.registration-photo-column {
+    color: #ffffff;
+}
+
+.photo-column-text-container {
+    text-align: center;
+}
+
+.registration-form-column {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.registration-form-column-title-container {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.registration-form {
+    max-width: 600px;
+    margin: 8% auto 0 auto;
+}
+
+.registration-button-container {
+    height: 40px;
+    margin-top: 8%;
+}
+
+.registration-button {
+    width: 100%;
+}
+
+.login-link-container {
+    padding-top: 2%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.log-in-link {
+    margin-top: 1%;
+    display: block;
+}
+

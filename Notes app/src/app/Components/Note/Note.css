@@ -1,0 +1,27 @@
+.grid-item {
+    width: 200px;
+    margin-left: 5px;
+    padding: 13px;
+    background: yellow;
+    font-family: 'Kalam', cursive;
+    font-size: 19px;
+    color: #211d1d;
+    margin-bottom: 5px;
+    display: inline-block;
+    position: relative;
+}
+
+.delete-note-icon {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.delete-note-icon:hover {
+    color: #404040;
+    cursor: pointer;
+}
+
+.delete-note-icon:active {
+    top: 6px;
+}

@@ -1,0 +1,20 @@
+.page-header {
+    height: 50px;
+    background: black;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.logo-container {
+    margin: 0 auto;
+}
+
+.logo-container a {
+    text-decoration: none;
+}
+
+.logo {
+    font-family: 'Permanent Marker', cursive;
+    color: yellow;
+    font-size: 40px;
+}

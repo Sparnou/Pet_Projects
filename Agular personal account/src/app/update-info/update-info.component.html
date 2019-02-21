@@ -1,0 +1,93 @@
+<router-outlet></router-outlet>
+<form [formGroup]="updateForm" ngClass="update-info-form">
+  <i class="fab fa-angular"></i>
+  <mat-spinner *ngIf="updateForm.controls.username.pending" [diameter]="20"></mat-spinner>
+  <mat-form-field>
+    <input
+      matInput
+      formControlName="username"
+      AUTOCOMPLETE="off"
+      placeholder="{{'Name placeholder' | translate}}"
+      value={{this.userService.getUserFromMemory().username}}
+    >
+    <mat-error *ngIf="updateForm.controls.username.errors?.incorrectName">
+      {{'Name value error' | translate}}
+    </mat-error>
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      formControlName="age"
+      AUTOCOMPLETE="off"
+      placeholder="{{'Age placeholder' | translate}}"
+      value={{this.userService.getUserFromMemory().age}}
+    >
+    <mat-error *ngIf="updateForm.controls.age.errors?.ageFormatError">
+      {{'Invalid age format error' | translate}}
+    </mat-error>
+    <mat-error *ngIf="updateForm.controls.age.errors?.ageValueError">
+      {{'Invalid age value error' | translate}}
+    </mat-error>
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      formControlName="dateOfBirth"
+      AUTOCOMPLETE="off"
+      placeholder="{{'Birthday placeholder' | translate}}"
+      value={{this.dateButify(this.userService.getUserFromMemory().dateOfBirth)}}
+    >
+    <mat-error *ngIf="updateForm.controls.dateOfBirth.errors?.invalidDateValue">
+      {{'Invalid date value error' | translate}}
+    </mat-error>
+    <mat-error *ngIf="updateForm.controls.dateOfBirth.errors?.futureDate">
+      {{'Future date error' | translate}}
+    </mat-error>
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      formControlName="dateOfFirstLogin"
+      AUTOCOMPLETE="off"
+      placeholder="{{'Date of first login placeholder' | translate}}"
+      value={{this.dateButify(this.userService.getUserFromMemory().dateOfFirstLogin)}}
+    >
+    <mat-error *ngIf="updateForm.controls.dateOfFirstLogin.errors?.invalidDateValue">
+      {{'Invalid date value error' | translate}}
+    </mat-error>
+    <mat-error *ngIf="updateForm.controls.dateOfFirstLogin.errors?.futureDate">
+      {{'Future date error' | translate}}
+    </mat-error>
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      formControlName="dateOfNextNotification"
+      AUTOCOMPLETE="off"
+      placeholder="{{'Date of next notification placeholder' | translate}}"
+      value={{this.dateButify(this.userService.getUserFromMemory().dateOfNextNotification)}}
+    >
+    <mat-error *ngIf="updateForm.controls.dateOfNextNotification.errors?.invalidDateValue">
+      {{'Invalid date value error' | translate}}
+    </mat-error>
+    <mat-error *ngIf="updateForm.controls.dateOfNextNotification.errors?.pastDate">
+      {{'Past date error' | translate}}
+    </mat-error>
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      formControlName="password"
+      AUTOCOMPLETE="off"
+      placeholder="{{'Enter a new password placeholder' | translate}}"
+      type="password"
+    >
+    <mat-error
+      *ngIf="updateForm.controls.password.errors?.incorrectPassword && (updateForm.controls.password.dirty || updateForm.controls.password.touched)">
+      {{'Error password value' | translate}}
+    </mat-error>
+  </mat-form-field>
+  <button ngClass="update-info-button" (click)="updateInfoHandler()">{{'Save changes button' | translate}}</button>
+</form>
+<app-loading-spinner [isShowSpinner]="isLoading"></app-loading-spinner>
+

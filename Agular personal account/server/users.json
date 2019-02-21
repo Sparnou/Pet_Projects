@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "username": "Jack",
+    "age": "28",
+    "password": "qwerty",
+    "dateOfBirth": "1990-09-23T20:00:00.000Z",
+    "dateOfFirstLogin": "2017-09-30T21:00:00.000Z",
+    "dateOfNextNotification": "2018-09-30T21:00:00.000Z",
+    "information": "some information"
+  },
+  {
+    "id": 2,
+    "username": "Cris",
+    "age": "21",
+    "password": "01234",
+    "dateOfBirth": "1997-10-26T21:00:00.000Z",
+    "dateOfFirstLogin": "2017-12-21T21:00:00.000Z",
+    "dateOfNextNotification": "2018-12-21T21:00:00.000Z",
+    "information": "some information"
+  }
+]
